@@ -1,20 +1,20 @@
-#' droptest: Simulates LOX/GOX drop testing.
+#' droptest: Simulates LOX drop testing.
 #'
-#' Generates simulated data representing the LOX/GOX drop testing
+#' Generates simulated data representing the LOX drop testing
 #' process (also known as impact testing). Drop testing is expensive, time
 #' consuming, and notoriously difficult to analyze. A simulated process allows
 #' for accelerated study of test behavior.
+#' 
 #' Functions are provided to simulate trials, test series, and groups of test
 #' series. Functions for creating plots specific to this process are also
 #' included. Test attributes and criteria can be set arbitrarily. This work is
 #' not endorsed by or affiliated with NASA.
 #' 
 #' Drop testing -- sometimes called impact testing -- is used to evaluate if a
-#' material will interact with liquid (LOX) or gaseous oxygen (GOX). The
-#' material is exposed to the LOX/GOX and an impactor is dropped onto the
-#' sample. Each drop is a bernoulli trial where a reaction is a failure and a
-#' non-reaction is a success. The specified number of trials -- until failure --
-#' completes one test.
+#' material will interact with liquid oxygen (LOX). The material is exposed to
+#' the LOX and an impactor is dropped onto the sample. Each drop is a bernoulli 
+#' trial where a reaction is a failure and a non-reaction is a success. The
+#' specified number of trials -- until failure -- completes one test.
 #'
 #' While fundamentally a binomial process, drop testing -- performed by the
 #' military and NASA -- yields results that are difficult to analyze. Numerous
@@ -92,6 +92,9 @@
 #'  \url{https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19800006920.pdf}
 #' }
 #' 
+#' \strong{Note:} This work is not endorsed by or affiliated with NASA. Released
+#' under MIT license.
+#' 
 #' @author Chad Ross \email{chad.ross@gmail.com}
 #' 
 #' @seealso 
@@ -101,6 +104,8 @@
 #'  \code{\link{trialdev}}
 #'  \code{\link{gayleplot}}
 #'  \code{\link{ratioplot}}
+#'  \code{\link{D7905}}
+#'  \code{\link{PREGENTD}}
 #' 
 #' @section Package source
 #'  \url{https://github.com/chadr/droptest}

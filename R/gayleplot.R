@@ -52,7 +52,7 @@ gayleplot <- function(simq = seq(0.01, 0.5, by = 0.05), ...) {
   binomial.group <- data.table(BIN_P = 100 * simb, 
                                BIN_SD = 100 * sqrt((simb * q) / n))
   
-  # historical non-truncated data
+  # historical data
   old <- data.frame(droptest::D7905)
   old$P <- old$P * 100
   old$SD <- old$SD * 100
@@ -73,6 +73,6 @@ gayleplot <- function(simq = seq(0.01, 0.5, by = 0.05), ...) {
   # plot smoothed curve for simulated std deviation points
   lines(sm.sim.sd, col = "blue", lwd=2)
   # legend
-  legend("bottomright", legend = c("Non-Truncated (Historical)",
-         "Truncated (Simulated)"), col = "black", pch = c(15, 19))
+  legend("bottomright", legend = c("Historical",
+         "Modern (Simulated)"), col = "black", pch = c(15, 19))
 }
