@@ -1,6 +1,6 @@
 Package: droptest
 Title: Simulates LOX Drop Testing
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: person("Chad", "Ross", email = "chad.ross@gmail.com",
     role = c("aut", "cre"))
 Author: Chad Ross [aut, cre]
@@ -22,6 +22,6 @@ Imports: data.table
 URL: https://github.com/chadr/droptest
 RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2018-05-23 02:27:17 UTC; Chad
+Packaged: 2018-08-18 19:24:07 UTC; Chad
 Repository: CRAN
-Date/Publication: 2018-06-23 04:53:25 UTC
+Date/Publication: 2018-08-18 19:40:07 UTC
